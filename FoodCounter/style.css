@@ -1,0 +1,21 @@
+#container
+{
+    height:400px;
+    width:400px;
+    position:relative;
+}
+
+.image {
+    position:absolute;
+	z-index:0;
+    left:0;
+    top:0px;
+}
+
+h1{
+    z-index:1;
+    position:relative;    
+    color:red;
+    font-size:24px;
+    font-weight:bold;
+}
