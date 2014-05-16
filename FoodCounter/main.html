@@ -8,18 +8,36 @@
 function incButtonClick()
 {
 var i = parseInt(num.innerHTML);
+var str = operation.innerHTML;
+if (str == "Increment"){
 i++;
+}
+else{
+i--;
+}
+
 num.innerHTML = i.toString();
+}
+function changeOperation()
+{
+var str = operation.innerHTML;
+if (str == "Increment"){
+str = "Decrement"
+}
+else {
+str = "Increment"
+}
+operation.innerHTML = str;
 }
 
 </script>
 </head>
 <body>
 <div id = "container">
-	<h1 id = 'num'>1</h1>
 	<img src="Plate.jpg" alt="" onclick ="incButtonClick()" class ="image"/>
-	
+
+<div id = "top">
+<a class = "button" onClick = "incButtonClick()" id = "button"><span id = 'num'>1</span></a>
+</div>	
 </div>
-<a class = "button"><Span>CLICK ME</Span> </a>
-</body>
-</html>
+<a class = "button" onClick = "changeOperation()" id = "change"><span id = 'operation'>Increment</span></a>

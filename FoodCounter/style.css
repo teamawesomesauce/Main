@@ -1,35 +1,25 @@
 #container
 {
-    height:400px;
-    width:400px;
+	z-index:-2;
     position:relative;
 }
 
-.image {
-    position:absolute;
-	z-index:0;
-    left:0;
-    top:0px;
-}
 
-h1{
+#top{
     z-index:1;
     position:relative;    
-    color:red;
-    font-size:24px;
-    font-weight:bold;
-	top: 25;
-	left
 }
+
 .button {
-    position: absolute;
+	cursor:pointer;
+    position: relative;
     top: 100px;
     left: 200px;
     display: inline-block;
     margin: 0 auto;
     
     -webkit-border-radius: 10px;
-    
+    -webkit-user-select: none;
     -webkit-box-shadow: 
         0px 3px rgba(128,128,128,1), /* gradient effects */
         0px 4px rgba(118,118,118,1),
@@ -109,7 +99,7 @@ h1{
     text-shadow: 0px 1px #fff, 0px -1px #262F33;
 }
 .button:active span{
-            -webkit-transform: translate(0, px); 
+            -webkit-transform: translate(0, 5px); 
 			}
 .button span:after {
         content: ">";
