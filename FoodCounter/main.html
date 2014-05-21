@@ -8,6 +8,10 @@ function bodyLoad()
 {
 var myVar = localStorage.getItem('myKey');
 num.innerHTML = myVar;
+if (myVar = '')
+{
+myVar = '0';
+}
 var d = new Date();
 var n = d.getHours();
 if (d.getHours() == 23)
