@@ -49,9 +49,12 @@ operation.innerHTML = str;
 <body onload = "bodyLoad()">
 <div id = "container">
 	<img src="Plate.jpg" alt="" onclick ="incButtonClick()" class ="image"/>
-
+Type the city here: 
+< input type="text" id="txtCity" onkeyup="FetchWeather(this.value)" />
 <div id = "top">
 <a class = "button" onClick = "incButtonClick()" id = "button"><span id = 'num'>1</span></a>
 </div>	
 </div>
 <a class = "button" onClick = "changeOperation()" id = "change"><span id = 'operation'>Increment</span></a>
+Type the city here: 
+<input type="text" id="txtCity" onkeyup="FetchWeather(this.value)" />
