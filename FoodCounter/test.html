@@ -4,18 +4,10 @@
 <head>
 <link href="style.css" rel = "stylesheet" content="text/css";>
 <script type="text/javascript">
-function bodyLoad()
+fuction bodyLoad()
 {
 var myVar = localStorage.getItem('myKey');
-num.innerHTML = myVar;
-var d = new Date();
-var n = d.getHours();
-if (d.getHours() == 23)
-{
-num.innerHTML = "0";
-}
-}
-
+num.innerHTML = i.toString(myKey);}
 function incButtonClick()
 {
 var i = parseInt(num.innerHTML);
@@ -26,18 +18,15 @@ i++;
 else{
 i--;
 }
-
-localStorage.setItem('myKey', i.toString());
+localStorage.setItem('myKey', 'i');
 num.innerHTML = i.toString();
 }
-
 function changeOperation()
 {
 var str = operation.innerHTML;
 if (str == "Increment"){
 str = "Decrement"
 }
-
 else {
 str = "Increment"
 }
