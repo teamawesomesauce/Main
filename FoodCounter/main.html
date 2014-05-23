@@ -3,12 +3,16 @@
 
 <head>
 <link href="style.css" rel = "stylesheet" content="text/css";>
+<script language="javascript" type="text/javascript" src="main.js">
 <script type="text/javascript">
 function bodyLoad()
 {
 var myVar = localStorage.getItem('myKey');
+if (myVar == "NAN"){
+myvar = "0";
+}
 num.innerHTML = myVar;
-if (myVar = '')
+if (myVar = '' || myVar = 'NAN' || myVar = NULL || myVar = 'nan')
 {
 myVar = '0';
 }
@@ -16,7 +20,7 @@ var d = new Date();
 var n = d.getHours();
 if (d.getHours() == 23)
 {
-num.innerHTML = "0";
+num.innerHTML = 0;
 }
 }
 
