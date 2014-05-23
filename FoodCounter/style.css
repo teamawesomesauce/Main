@@ -1,13 +1,24 @@
-#container
-{
-	z-index:-2;
-    position:relative;
+
+#counterbutton{
+    z-index:1;
+    position:absolute;   
+    top: 120px;	
+	left: -90px;
 }
 
+#incbutton{
+    position:relative;
+    top: -280px;
+    left: -90px;
+    z-index: 4;
+}
 
-#top{
-    z-index:1;
-    position:relative;    
+#fruits{
+    z-index:3;
+    position: relative;
+    display: inline;
+    left:90px;
+    top: -400px;
 }
 
 .button {
@@ -34,11 +45,11 @@
 
 .button span 
 {
-     background-color: #E8E8E8;
+     
     
-    background-image: 
+    background-image: url('fruits.jpg');
         /* gloss gradient */
-        -webkit-gradient(
+       /*/*/*/*/*/* -webkit-gradient(
             linear, 
             left bottom, 
             left top, 
@@ -90,7 +101,7 @@
     display: inline-block;
     padding: 10px 40px 10px 40px;
     
-    color: #3A474D;
+    color: green;
     text-transform: uppercase;
     font-family: 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
     font-weight: 700;
@@ -117,4 +128,5 @@
         text-shadow: 0px 1px #fff, 0px -1px #97A63A;
         font-size: 26px;
     }
+	
 	
