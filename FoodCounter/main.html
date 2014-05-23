@@ -7,11 +7,12 @@
 function bodyLoad()
 {
 var myVar = localStorage.getItem('myKey');
-num.innerHTML = myVar;
-if (myVar = '')
+if (myVar == null)
 {
 myVar = '0';
 }
+num.innerHTML = myVar;
+
 var d = new Date();
 var n = d.getHours();
 if (d.getHours() == 23)
@@ -52,13 +53,21 @@ operation.innerHTML = str;
 </head>
 <body onload = "bodyLoad()">
 <div id = "container">
-	<img src="Plate.jpg" alt="" onclick ="incButtonClick()" class ="image"/>
+<div id = whiteplate>
+<img src="whiteplate.jpg" alt="plate"> </div>
+<div id = fruits>
+	<img src = "fruits.jpg" alt="fruits"onclick ="incButtonClick()">
+</div>
 Type the city here: 
 < input type="text" id="txtCity" onkeyup="FetchWeather(this.value)" />
-<div id = "top">
+<div id = "counterbutton">
 <a class = "button" onClick = "incButtonClick()" id = "button"><span id = 'num'>1</span></a>
 </div>	
-</div>
+
+<div id = incbutton>
 <a class = "button" onClick = "changeOperation()" id = "change"><span id = 'operation'>Increment</span></a>
+</div>
 Type the city here: 
 <input type="text" id="txtCity" onkeyup="FetchWeather(this.value)" />
+
+</div>
