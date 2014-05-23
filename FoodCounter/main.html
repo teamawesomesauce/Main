@@ -7,11 +7,12 @@
 function bodyLoad()
 {
 var myVar = localStorage.getItem('myKey');
-num.innerHTML = myVar;
-if (myVar = '')
+if (myVar == null)
 {
-myVar = '0';
+myVar = 0;
 }
+num.innerHTML = myVar;
+
 var d = new Date();
 var n = d.getHours();
 if (d.getHours() == 23)
@@ -47,7 +48,12 @@ str = "Increment"
 }
 operation.innerHTML = str;
 }
-
+function clearData()
+{
+localStorage.clear();
+var i =0;
+num.innerHTML = i.toString();
+}
 </script>
 </head>
 <body onload = "bodyLoad()">
@@ -62,3 +68,4 @@ Type the city here:
 <a class = "button" onClick = "changeOperation()" id = "change"><span id = 'operation'>Increment</span></a>
 Type the city here: 
 <input type="text" id="txtCity" onkeyup="FetchWeather(this.value)" />
+<a class = "button" onClick = "clearData()" id = "change"><span id = 'clearData'>Clear Data</span></a>
