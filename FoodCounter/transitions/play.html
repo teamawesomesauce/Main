@@ -1,0 +1,23 @@
+<script type="text/javascript">
+function expand(){
+    document.getElementById('id').style.width="300px";
+}
+</script>
+
+<style type="text/css"> 
+div#id
+{
+width:100px;
+height:100px;
+background:red;
+transition:width 2s;
+-moz-transition:width 2s; /* Firefox 4 */
+-webkit-transition:width 2s; /* Safari and Chrome */
+-o-transition:width 2s; /* Opera */
+}
+</style>
+
+
+<div id="id" onClick="expand()">
+    Div Content...
+</div>

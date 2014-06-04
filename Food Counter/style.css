@@ -1,31 +1,76 @@
-
-#counterbutton{
-    z-index:1;
-    position:absolute;   
-    top: 120px;	
-	left: -90px;
-}
-
-#incbutton{
+#operationButton{
     position:relative;
-    top: -280px;
-    left: -90px;
-    z-index: 4;
+    min-width: 250px;
+    float left
+}
+#operation{
+    min-width: 250px;   
 }
 
-#fruits{
-    z-index:3;
-    position: relative;
-    display: inline;
-    left:90px;
-    top: -400px;
+#fruitButton{
+    position:relative;
+    top: 10px;   
+    min-width: 75px;
 }
+#fruits{
+    background-image: url('fruits.jpg');
+    top: 10px;
+    min-width: 75px;
+}
+
+#veggieButton{
+
+    position:relative;   
+    top: 10px;
+    min-width: 75px;
+}
+#veggies{
+    background-image: url('veggies.jpg');
+    top: 10px;
+    min-width: 75px;
+}
+
+#proteinButton{
+    position:relative;
+    top: 20px;   
+    min-width: 75px;
+}
+
+#proteins{
+    background-image: url('proteins.jpg');
+    top: 20px;
+    min-width: 75px;
+}
+
+
+#dairyButton{
+
+    position:relative;
+    top: 20px;
+    min-width: 75px;
+}
+
+#dairies{
+    background-image: url('dairies.jpg');
+    top: 20px;
+    min-width: 75px;
+
+}
+
+
+#clearButton{
+    top: 40px;
+    position:relative;
+    left: 60px;
+}
+#clear{
+    
+}
+
 
 .button {
 	cursor:pointer;
     position: relative;
-    top: 100px;
-    left: 200px;
     display: inline-block;
     margin: 0 auto;
     
@@ -43,11 +88,11 @@
     -webkit-transition: -webkit-box-shadow .1s ease-in-out;
 } 
 
-.button span 
+.button span
 {
      
     
-    background-image: url('fruits.jpg');
+    
         /* gloss gradient */
        /*/*/*/*/*/* -webkit-gradient(
             linear, 
@@ -113,6 +158,22 @@
             -webkit-transform: translate(0, 5px); 
 			}
 .button span:after {
+        content: ">";
+        display: block;
+        width: 10px;
+        height: 10px;
+    
+        position: absolute;
+        right: 14px;
+        top: 12px;    
+        
+        font-family: 'Cabin';
+        font-weight: 700;
+        color: #AEBF3B;
+        text-shadow: 0px 1px #fff, 0px -1px #97A63A;
+        font-size: 26px;
+    }
+.button span:after #operation {
         content: ">";
         display: block;
         width: 10px;
