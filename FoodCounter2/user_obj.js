@@ -3,6 +3,7 @@ function user(name){
 	// add more
 	this.name = name	;
 	this.options		;
+	this.food_progress_information	;
 }
 
 function options(){
