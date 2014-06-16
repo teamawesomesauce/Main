@@ -8,18 +8,20 @@ function user(name ,daily_dic, total_dic){
 
 	// food progress arrays
 	// access this values user.daily_dic['key']
-	this.daily_dic = daily_dic;
-		daily_dic['meats'] 		= 1;
-		daily_dic['veggies'] 	= 2;
-		daily_dic['dairy'] 		= 3;
-		daily_dic['sweets'] 	= 4;
-		daily_dic['grains'] 	= 5;
+this.daily_dic = daily_dic;
+		daily_dic['Protein'] 	= 0;
+		daily_dic['Veggies'] 	= 0;
+		daily_dic['Dairy'] 		= 0;
+		daily_dic['Sweets'] 	= 0;
+		daily_dic['Grains'] 	= 0;
+		daily_dic['Fruits']		= 0;
 	this.total_dic = total_dic;
-		total_dic['meats'] 		= 0;
-		total_dic['veggies'] 	= 0;
-		total_dic['dairy'] 		= 0;
-		total_dic['sweets'] 	= 0;
-		total_dic['grains'] 	= 0;
+		total_dic['Protein'] 	= 0;
+		total_dic['Veggies'] 	= 0;
+		total_dic['Dairy'] 		= 0;
+		total_dic['Sweets'] 	= 0;
+		total_dic['Grains'] 	= 0;
+		total_dic['Fruits']		= 0;
 	// loops by index to add daily valuse to users totals
 	// does this at a specific time of the day and is only called
 	// once in the main js file
