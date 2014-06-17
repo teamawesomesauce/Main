@@ -47,6 +47,39 @@ h1{
     background: #fff url(../images/bartoszkosowski.jpg) no-repeat center left;
   }
 
+#fruits {
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(255, 0, 0, 0.15), 
+      rgba(255, 0, 0, 0.15)
+    ),
+    /* bottom, image */
+    url(fruits.jpg) no-repeat center left;
+}
+
+#veggies {
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 255, 0, 0.15), 
+      rgba(0, 255, 0, 0.15)
+    ),
+    /* bottom, image */
+    url(veggies.jpg) no-repeat center left;
+}
+
+#protein {
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 255, 0.15), 
+      rgba(0, 0, 255, 0.15)
+    ),
+    /* bottom, image */
+    url(protein.jpg) no-repeat center left;
+}
+
 .button {
    -webkit-user-select: none;
    text-align: center;
