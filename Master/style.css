@@ -8,7 +8,7 @@
 #SearchPage{
     width: 100%;
     position:absolute;
-    left : -150%;
+    left : -1000%;
     transition: left 2s ease; 
   }
 
@@ -78,6 +78,16 @@ h1{
     url(protein.jpg) no-repeat center left;
 }
 
+#sweets {
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(255, 255, 0, 0.15), 
+      rgba(255, 255, 0, 0.15)
+    ),
+    /* bottom, image */
+    url(protein.jpg) no-repeat center left;
+}
 .button {
    -webkit-user-select: none;
    text-align: center;
