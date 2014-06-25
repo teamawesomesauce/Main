@@ -86,7 +86,7 @@ h1{
       rgba(255, 255, 0, 0.15)
     ),
     /* bottom, image */
-    url(protein.jpg) no-repeat center left;
+    url(sweets.jpg) no-repeat center left;
 }
 .button {
    -webkit-user-select: none;
