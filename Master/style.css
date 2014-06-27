@@ -8,7 +8,21 @@
 #SearchPage{
     width: 100%;
     position:absolute;
-    left : -1000%;
+    left : -600%;
+    transition: left 2s ease; 
+  }
+
+#StatsPage{
+    width: 100%;
+    position:absolute;
+    left : -600%;
+    transition: left 2s ease; 
+  }  
+
+#StatsPage{
+    width: 100%;
+    position:absolute;
+    left : -600%;
     transition: left 2s ease; 
   }
 
