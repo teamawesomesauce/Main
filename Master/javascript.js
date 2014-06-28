@@ -34,6 +34,11 @@ function loadData()
 	
 }
 
+save_user_data = function() {
+	// body...
+	localStorage.setItem('user_key', JSON.stringify(my_user));
+};
+
 // populates user name
 function populate_user_name(name){
 	UserName.innerHTML = 'Hello ' + name;
