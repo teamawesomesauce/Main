@@ -35,8 +35,8 @@ function loadData() {
 }
 
 save_user_data = function() {
-	// body...
-	localStorage.setItem('user_key', JSON.stringify(my_user));
+    // body...
+    localStorage.setItem('user_key', JSON.stringify(my_user));
 };
 
 // populates user name
@@ -88,6 +88,31 @@ function pageTransition(destPage) {
             document.querySelector('#' + pageArray[i]).style.position = "absolute";
         }
 
-    };
+    }
+}
 
+/******************************************************************
+ ***************************Get Facts*******************************
+ ******************************************************************/
+function getFacts() {
+
+    xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange =
+        function() {
+            SearchResults.innerHTML = "";
+
+            var str = "Results: <br> <ul id = %22ResultsList%22>";
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                //tipText.innerHTML 
+                var facts = JSON.parse(xmlhttp.responseText);
+                for (var i = 0; i < facts.hits.length; i++) {
+                    str = str + "<li id = %22ResultsListItems%22> " + facts.hits[i].fields.item_name + " " + facts.hits[i].fields.brand_name + " <strong>Calories:</strong> " + facts.hits[i].fields.nf_calories + " Fat: " + facts.hits[i].fields.nf_total_fat + "</li> <br>";
+                };
+
+                SearchResults.innerHTML = str + "</ul>";
+            }
+    }
+    xmlhttp.open("GET", "https://api.nutritionix.com/v1_1/search/" + document.querySelector('#SearchInput').value + "?&fields=item_name,brand_name,item_id,nf_calories,nf_total_fat,item_Name,brand_Name&appId=d525c778&appKey=e53c464c74d2f64c101476ac6428dcb3", "true");
+    xmlhttp.send();
 }
