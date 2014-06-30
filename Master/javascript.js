@@ -72,7 +72,7 @@ function changeOperation() {
  *****************************************************************/
 function pageTransition(destPage) {
 
-    var pageArray = ["MainPage", "StatsPage", "SettingsPage"];
+    var pageArray = ["MainPage", "StatsPage", "SettingsPage", "SearchPage"];
 
     for (var i = pageArray.length - 1; i >= 0; i--) {
         if (pageArray[i] == destPage) {
